@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f6ff;
+    color:#2b2140;
+}
+
+
+/* HEADER */
+
+header{
+    background:white;
+    position:sticky;
+    top:0;
+    padding:20px 8%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#6c2bd9;
+    font-size:28px;
+}
+
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#2b2140;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#6c2bd9;
+}
+
+
+
+/* BUTTONS */
+
+.btn,
+.outline-btn{
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn{
+    background:#6c2bd9;
+    color:white;
+}
+
+.outline-btn{
+    border:2px solid white;
+    color:white;
+}
+
+
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:80px 8%;
+}
+
+.hero-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.present{
+    letter-spacing:4px;
+}
+
+
+.hero h1{
+    font-size:60px;
+    margin:20px 0;
+}
+
+
+.hero h2{
+    color:#6c2bd9;
+    font-size:30px;
+}
+
+
+.hero p{
+    margin:20px auto;
+    line-height:1.6;
+}
+
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+
+
+
+/* IMAGES */
+
+.hero-images{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+
+.hero-images img{
+    width:220px;
+    height:150px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+
+
+/* SECTIONS */
+
+section{
+    padding:60px 8%;
+}
+
+
+section h2{
+    text-align:center;
+    color:#6c2bd9;
+    font-size:35px;
+    margin-bottom:40px;
+}
+
+
+
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+
+.card,
+.event{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+
+.card img{
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+
+.card h3,
+.event h3{
+    color:#6c2bd9;
+    margin-bottom:15px;
+}
+
+
+.card p,
+.event p{
+    line-height:1.6;
+}
+
+
+
+/* TRACK COLOURS */
+
+.beginner{
+    border-top:6px solid green;
+}
+
+
+.mid{
+    border-top:6px solid blue;
+}
+
+
+.senior{
+    border-top:6px solid red;
+}
+
+
+
+/* TIMELINE */
+
+.timeline{
+    max-width:800px;
+    margin:auto;
+    display:grid;
+    gap:20px;
+}
+
+
+
+/* REWARDS */
+
+#rewards{
+    background:white;
+}
+
+
+#rewards .card{
+    border-top:5px solid #6c2bd9;
+}
+
+
+
+
+/* FOOTER */
+
+footer{
+    background:#3b136f;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+
+footer h3{
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+
+    .hero h1{
+        font-size:40px;
+    }
+
+
+    section h2{
+        font-size:30px;
+    }
+
+}
